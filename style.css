@@ -1,0 +1,89 @@
+/* ফন্ট ইম্পোর্ট */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f4f4f4;
+    transition: background 0.3s ease-in-out;
+}
+
+/* ডার্ক মোড */
+.dark-mode {
+    background: #121212;
+    color: white;
+}
+
+/* হেডার */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #0073e6;
+    padding: 20px;
+    color: white;
+}
+
+header .logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li button {
+    background: transparent;
+    border: none;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+/* হিরো সেকশন */
+.hero {
+    text-align: center;
+    padding: 100px;
+    background: url('https://source.unsplash.com/1600x900/?technology') no-repeat center center/cover;
+    color: white;
+}
+
+.hero h1 {
+    font-size: 3em;
+}
+
+/* অন্যান্য সেকশন */
+section {
+    padding: 50px;
+    text-align: center;
+}
+
+.projects .project-card {
+    background: white;
+    padding: 20px;
+    margin: 10px;
+    display: inline-block;
+    width: 300px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* ফুটার */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #333;
+    color: white;
+}
