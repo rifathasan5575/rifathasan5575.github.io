@@ -1,17 +1,92 @@
-body {
-    font-family: Arial, sans-serif;
-    background: linear-gradient(to right, #4facfe, #00f2fe);
-    color: white;
-    text-align: center;
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    background: linear-gradient(120deg, #f0f0f0, #dcdcdc);
+    color: #333;
 }
 
 header {
-    padding: 20px;
-    background: rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #007bff;
+    padding: 15px 20px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+}
+
+.logo {
+    color: #fff;
+    font-size: 24px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.hero {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 50px;
+    color: #007bff;
+}
+
+.name {
+    color: #ff5733;
+}
+
+.typing-text {
+    font-size: 30px;
+    font-weight: bold;
+    color: #333;
+    animation: typing 3s steps(20) infinite alternate;
+}
+
+@keyframes typing {
+    from { width: 0; }
+    to { width: 100%; }
 }
 
 section {
-    margin-top: 50px;
+    padding: 60px;
+    text-align: center;
+}
+
+.project {
+    background: white;
+    padding: 20px;
+    margin: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
 }
